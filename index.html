@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Chess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="join-screen" class="join-screen">
+      <h1>Join Chess Game</h1>
+      <div class="join-form">
+        <input type="text" id="player-name" placeholder="Enter your name">
+        <div class="button-group">
+          <button onclick="joinGame('white')" class="btn-white">Play as White</button>
+          <button onclick="joinGame('black')" class="btn-black">Play as Black</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="game-screen" class="game-screen hidden">
+      <div class="game-info">
+        <h1>Chess Game</h1>
+        <div id="status" class="status"></div>
+      </div>
+      
+      <div class="board-container">
+        <div id="chessboard" class="chessboard"></div>
+      </div>
+    </div>
+  </div>
+  <script src="chess.js"></script>
+</body>
+</html>
